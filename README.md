@@ -15,7 +15,7 @@ AnkiField2AI 是一个基于 Python 的自动化工具，旨在通过 AI（如 D
 
 ### 🖼️ 示例图片
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/918fddb4-90fe-4dbf-8dea-0200623481dc" width="400">
+  <img src="https://github.com/user-attachments/assets/918fddb4-90fe-4dbf-8dea-0200623481dc" width="800">
 </p>
 
 
