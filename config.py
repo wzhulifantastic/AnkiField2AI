@@ -1,9 +1,26 @@
 import os
 import sys
 from dotenv import load_dotenv
+import logging
+import time
 
-load_dotenv()
+# === 看门狗代码：检查 .env 是否存在 ===
+if not os.path.exists(".env"):
+    print("\n" + "="*50)
+    print("🛑 错误：未找到配置文件 .env")
+    print("="*50)
+    print("💡 解决方法：")
+    print("1. 找到项目目录下的 '.env.example' 文件。")
+    print("2. 把它复制一份，重命名为 '.env'。")
+    print("3. 打开 '.env'，填入你的各种信息（如 DeepSeek API Key 等）。")
+    print("="*50 + "\n")
+    logging.error("配置文件 .env 不存在，程序终止。")
+    
+    # 等待 60 秒后退出，给用户时间阅读提示
+    time.sleep(60)
+
 # Load environment variables from a .env file where main.py is located
+load_dotenv()
 
 class Config:
     """
