@@ -45,7 +45,9 @@ AnkiField2AI 是一个基于 Python 的自动化工具，旨在通过 AI（如 D
 ```bash
 git clone [https://github.com/你的用户名/AnkiField2AI.git](https://github.com/你的用户名/AnkiField2AI.git)
 cd 你存放AnkiField2AI的文件夹
+```
 
 ### 2. 下载Python库
 ```bash
 pip install -r requirements.txt
+```
